@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zingen - Karaoke</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container py-base">
+            <nav class="flex items-center gap-1.5">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="Zingen Logo">
+                </a>
+
+                <a href="#about" class="desktop-only">Get to Know the App</a>
+                <a href="#features" class="desktop-only">Features</a>
+                <a href="#pricing" class="desktop-only">Plans and Pricing</a>
+                <a href="#download" class="btn btn-sm">Download Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container py-xl">
+            <img src="assets/music-bars.svg" alt="">
+            <h1>Sing away your troubles</h1>
+            <p>Singing has never been so easy</p>
+
+            <div class="buttons flex items-center gap-1">
+                <a href="#pricing" aria-label="See Plans" class="btn btn-md"></a>
+                <a href="#download" class="btn btn-md">Download Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="smartphones-img">
+        <div class="container">
+            <img src="assets/smartphones.png" alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container even-columns py-xl items-center">
+            <div>
+                <header>
+                    <strong>Get to Know the App</strong>
+                    <h2>The Perfect App to Learn to Sing</h2>
+                </header>
+                <p>Our AI algorithm allows you to remove the original voice and keep the melodies of the songs. This
+                    way, we have the largest karaoke music repertoire! Additionally, when you sing, your voice and pitch
+                    are compared by the algorithm, providing precise performance evaluation to help you improve your
+                    singing.</p>
+            </div>
+            <div>
+                <img class="desktop-only" src="assets/smartphones.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="cards container py-xl grid gap-1.5">
+            <div class="card py-lg px-lg">
+                <img src="assets/icons/MagicWand.svg" alt="">
+                <h3>The Largest Karaoke Music Library!</h3>
+                <p>Our AI removes the voice from any song and makes it ready to sing, like magic!</p>
+            </div>
+
+            <div class="card py-lg px-lg">
+                <div>
+                    <img src="assets/icons/GameController.svg" alt="">
+                    <h3>Gamified Experience</h3>
+                    <p>Your performance is scored according to our ultra-precise algorithm. Challenge yourself, gain
+                        recognition, and celebrate your progress!</p>
+                </div>
+                <img class="desktop-only" src="assets/Tela 2.png" alt="">
+            </div>
+
+            <div class="card py-lg px-lg">
+                <img src="assets/icons/MicrophoneStage.svg" alt="">
+                <h3>Record Your Performances</h3>
+                <p>Whether to share with friends or to track your progress, our audio and video recording feature lets
+                    you enjoy the experience to the fullest!</p>
+            </div>
+
+            <div class="card py-lg px-lg">
+                <div>
+                    <img src="assets/icons/UsersThree.svg" alt="">
+                    <h3>Share with the Community</h3>
+                    <p>Share your recordings with the community, interact, and explore other people's vocal performances
+                        in your feed!</p>
+                </div>
+                <img class="desktop-only" src="assets/Tela 1.png" alt="">
+            </div>
+
+            <div class="card py-lg px-lg">
+                <div>
+                    <img src="assets/icons/MusicNotes.svg" alt="">
+                    <h3>Real-time Lyrics</h3>
+                    <p>Never lose the beat with real-time synced lyrics. You can also activate the original voice of the
+                        song to help.</p>
+                </div>
+                <img class="desktop-only" src="assets/Tela 3.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container py-xl">
+            <header>
+                <strong>Plans and Pricing</strong>
+                <h2>Subscribe for Unlimited Access to All Features</h2>
+            </header>
+
+            <div class="cards even-columns items-center">
+                <div class="card py-lg px-lg">
+                    <h3>Basic</h3>
+                    <p>Download the app and start singing right now!</p>
+                    <zin-pricing>Free</zin-pricing>
+                    <a href="#download" aria-label="Download Now" class="btn btn-md"></a>
+                    <div class="separator"></div>
+                    <ul role="list" class="grid gap-1">
+                        <li>With ads</li>
+                        <li>Up to 5 songs per day</li>
+                        <li>Sing only the songs available in the free plan</li>
+                    </ul>
+                </div>
+
+                <div class="premium">
+                    <div class="card py-lg px-lg">
+                        <span>1 month free</span>
+                        <h3>Premium</h3>
+                        <p>Ideal for those who are tired of embarrassing themselves at karaoke</p>
+                        <zin-pricing>$24.90 <small></small>/month</zin-pricing>
+                        <a href="#" class="btn btn-md">Try for Free</a>
+                        <div class="separator"></div>
+                        <ul role="list" class="grid gap-1">
+                            <li>Ad-free</li>
+                            <li>Sing as many songs as you want</li>
+                            <li>Sing all the songs in the library</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card py-lg px-lg">
+                    <h3>Family</h3>
+                    <p>For families who love to gather and sing</p>
+                    <zin-pricing>$21.90 <small>/month per person</small></zin-pricing>
+                    <a href="#download" aria-label="Subscribe Now" class="btn btn-md"></a>
+                    <div class="separator"></div>
+                    <ul role="list" class="grid gap-1">
+                        <li>Ad-free</li>
+                        <li>Sing as many songs as you want</li>
+                        <li>Sing all the songs in the library</li>
+                    </ul>
+
+                    <small>Minimum of 4 people in the family plan.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container py-xl"></div>
+        <div class="card px-lg even-columns items-center">
+            <div>
+                <header>
+                    <strong>Download</strong>
+                    <h2>Let's Sing?</h2>
+                </header>
+
+                <p>Awaken your star potential, unleash your voice, and join the most engaging musical community.
+                    Download Zingen now and turn your performances into unforgettable experiences!</p>
+
+                <div class="buttons flex gap-1">
+                    <a href="#">
+                        <img src="assets/icons/button-appstore.svg" alt="Download from Apple Store">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/icons/button-playstore.svg" alt="Download from Play Store">
+                    </a>
+                </div>
+            </div>
+
+            <img src="assets/rapaz-ouvindo-musica-com-fones-de-ouvido-e-cantando-no-aplicativo-de-karaoke-removebg 1.png"
+                alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container py-xl grid">
+            <section class="grid top">
+                <img src="assets/logo.svg" alt="">
+
+                <nav class="even-columns">
+                    <ul role="list" class="grid gap-1.5">
+                        <li class="title">Product</li>
+
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+
+                        <li>
+                            <a href="#pricing">Plans and Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="#download">Download</a>
+                        </li>
+                    </ul>
+
+                    <ul role="list" class="grid gap-1.5">
+                        <li class="title">Company</li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+
+                    <ul role="list" class="grid gap-1.5">
+                        <li class="title">Legal</li>
+                        <li>
+                            <a href="#about">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
